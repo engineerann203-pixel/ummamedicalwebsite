@@ -1,0 +1,63 @@
+/* Special Clinics */
+.special-clinics {
+  padding: 2rem 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.special-clinics h2 {
+  margin-bottom: 1.5rem;
+  color: #1473e6;
+}
+
+.clinics-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.clinic {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+.clinic h3 {
+  margin-top: 0;
+  color: #1473e6;
+}
+
+.clinic p {
+  margin-bottom: 0;
+}
+
+/* Other Services */
+.other-services {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.other-services h2 {
+  margin-bottom: 1.5rem;
+  color: #1473e6;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.service {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 200px;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,61 @@
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Umma Medical Centre</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html#special-clinics">Special Clinics</a></li>
+        <li><a href="services.html#other-services">Other Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Compassionate Healthcare for Your Family</h1>
+      <p>General consultation, special clinics, diagnostics, and telemedicine services.</p>
+      <a href="services.html#special-clinics" class="btn">Special Clinics</a>
+      <a href="services.html#other-services" class="btn secondary">Other Services</a>
+      <a href="#appointment" class="btn">Book Appointment</a>
+    </div>
+  </section>
+
+  <section id="appointment" class="appointment container">
+    <h2>Book an Appointment</h2>
+    <form id="appointment-form">
+      <label for="fullname">Full Name</label>
+      <input id="fullname" name="fullname" required>
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" required placeholder="+2547...">
+
+      <label for="service">Service</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option>General consultation</option>
+        <option>Gynaecologist</option>
+        <option>Urologist</option>
+        <option>Diabetes Clinic</option>
+        <option>Gastroenterologist</option>
+        <option>Dental Clinic</option>
+        <option>Optical</option>
+        <option>Pharmacy</option>
+        <option>Telemedicine</option>
+        <option>Lab</option>
+        <option>Ultrasound</option>
+        <option>X-ray</option>
+        <option>Vaccines (Coming Soon)</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input id="date" name="date" type="date">
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <div id="form-response"></div>
+  </section>
+</main>
