@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Umma Medical Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand-left">
+      <img src="logo.svg" alt="Umma Medical Centre logo" class="logo-inline">
+      <span class="brand-name">Umma Medical Centre</span>
+    </div>
+    <nav class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>Phone: <a href="tel:+254701000000">+254 726137600</a></p>
+    <p>Email: <a href="ummamedical.co.ke">ummamedical.co.ke</a></p>
+    <p>Address:portal place, Banda Street next to Jamia Mosque</p>
+
+    <h2>Send a message</h2>
+    <form id="contact-form" novalidate>
+      <input id="cname" name="name" placeholder="Your name" required>
+      <input id="cemail" name="email" type="email" placeholder="Your email" required>
+      <textarea id="cmessage" name="message" rows="5" placeholder="Your message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+      <div id="contact-res" class="form-res" aria-live="polite"></div>
+    </form>
+
+    <h2>Find us</h2>
+    <!-- Replace the src below with a Google Maps iframe for the real address -->
+    <div class="map-placeholder"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8167388360525!2d36.8204796!3d-1.2838470999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6a4b88f0b%3A0xc431cdfd8a020c88!2sPortal%20Place%20House%20-%20Shop%202!5e0!3m2!1sen!2ske!4v1765286415232!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; Umma Medical Centre</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Umma Medical Centre</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Umma Medical Centre — compassionate medical & dental care, diagnostics, pharmacy and telemedicine.">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand-left">
+      <img src="logo.svg" alt="Umma Medical Centre logo" class="logo-inline">
+      <span class="brand-name">Umma Medical Centre</span>
+    </div>
+    <nav class="nav-right" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="dental.html">Book Appointment</a>
+      <button id="nav-toggle" aria-expanded="false" class="nav-toggle">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Compassionate healthcare you can trust</h1>
+          <p>Primary care, dental & special clinics, diagnostics, pharmacy and telemedicine — high quality care for your family.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="services.html#special-clinics">Special Clinics</a>
+            <a class="btn secondary" href="services.html#other-services">Other Services</a>
+            <a class="btn" href="dental.html">Book Dental</a>
+          </div>
+        </div>
+        <div class="hero-form">
+          <h3>Request an appointment</h3>
+          <form id="home-appt" novalidate>
+            <input id="h_name" name="name" placeholder="Full name" required>
+            <input id="h_phone" name="phone" placeholder="+2547..." required>
+            <select id="h_service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>General consultation</option>
+              <option>Dental Clinic</option>
+              <option>Optical</option>
+              <option>Pharmacy</option>
+              <option>Telemedicine</option>
+              <option>Lab</option>
+            </select>
+            <button class="btn" type="submit">Request</button>
+            <div id="home-appt-res" class="form-res" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-preview container">
+      <h2>Our Special Clinics</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Dental Clinic</h3>
+          <p>Comprehensive oral care — checkups, fillings, braces, implants and cosmetic dentistry.</p>
+          <a href="dental.html" class="link">Learn more →</a>
+        </article>
+        <article class="card">
+          <h3>Gynaecology</h3>
+          <p>Women's health, pregnancy care and reproductive services.</p>
+        </article>
+        <article class="card">
+          <h3>Urology</h3>
+          <p>Management of urinary and male reproductive health conditions.</p>
+        </article>
+        <article class="card">
+          <h3>Diabetes Clinic</h3>
+          <p>Education, monitoring and personalized diabetes care plans.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="why container">
+      <h2>Why choose Umma</h2>
+      <div class="grid">
+        <div class="feature">
+          <h4>Experienced team</h4>
+          <p>Qualified doctors, nurses and technicians.</p>
+        </div>
+        <div class="feature">
+          <h4>On-site diagnostics</h4>
+          <p>Lab, X-ray and ultrasound for fast trusted results.</p>
+        </div>
+        <div class="feature">
+          <h4>Telemedicine</h4>
+          <p>Remote consultations for convenience and safety.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Umma Medical Centre</p>
+      <p>Phone: <a href="tel:+254701000000">+254 726137600</a> — Email: <a href="ummamedical.co.ke">ummamedical.co.ke</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
