@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dental Care — Umma Medical Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand-left">
+      <img src="logo.svg" alt="Umma Medical Centre logo" class="logo-inline">
+      <span class="brand-name">Umma Medical Centre</span>
+    </div>
+    <nav class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero small-hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Dental Care</h1>
+          <p>Gentle, modern dental services — checkups, hygiene, braces, implants, whitening and restorative care.</p>
+        </div>
+        <div class="hero-form">
+          <h3>Book Dental Appointment</h3>
+          <form id="dental-book" novalidate>
+            <input id="dental_name" name="name" placeholder="Full name" required>
+            <input id="dental_phone" name="phone" placeholder="+2547..." required>
+            <select id="dental_service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Consultation</option>
+              <option>Hygiene / Cleaning</option>
+              <option>Braces</option>
+              <option>Implant</option>
+              <option>Root Canal</option>
+              <option>Whitening</option>
+            </select>
+            <input id="dental_date" name="date" type="date">
+            <button class="btn" type="submit">Request Appointment</button>
+            <div id="dental-res" class="form-res" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Our Dental Services</h2>
+      <div class="grid">
+        <div class="card"><h3>General Dentistry</h3><p>Routine checkups, fillings and preventive care.</p></div>
+        <div class="card"><h3>Cosmetic Dentistry</h3><p>Whitening, veneers and aesthetic treatments.</p></div>
+        <div class="card"><h3>Restorative Dentistry</h3><p>Implants, crowns and bridges.</p></div>
+        <div class="card"><h3>Endodontics</h3><p>Root canal treatment and tooth preservation.</p></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>F.A.Q</h2>
+      <div class="faq">
+        <h4>How much is a consultation?</h4>
+        <p>Standard dental consultation is Ksh 1,000 (examples — please confirm at reception).</p>
+
+        <h4>Do you accept insurance?</h4>
+        <p>Yes — we accept many providers. Confirm acceptance when booking.</p>
+
+        <h4>Can I walk in?</h4>
+        <p>Walk-ins are accepted when dentists are available, but booking is recommended.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; Umma Medical Centre</div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    // Local handler specific to dental booking (gives confirmation text)
+    document.addEventListener('DOMContentLoaded', function(){
+      var form = document.getElementById('dental-book');
+      var out = document.getElementById('dental-res');
+      if(form){
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          var name = document.getElementById('dental_name').value.trim();
+          var phone = document.getElementById('dental_phone').value.trim();
+          var service = document.getElementById('dental_service').value;
+          if(!name || !phone || !service){
+            out.textContent = 'Please complete name, phone and choose a service.';
+            out.style.color = 'crimson';
+            return;
+          }
+          out.textContent = 'Thanks ' + name + '. Your dental booking request for ' + service + ' has been received. We will contact you to confirm.';
+          out.style.color = 'green';
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
